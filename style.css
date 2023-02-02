@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.boxes{
+    display: grid;
+    gap: 10px;
+    margin: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 98%;
+    height: 700px;
+    grid-template-areas:
+    "first second second third"
+    "first fourth fifth eighth"
+    "first sixth seventh eighth";
+}
+.first{
+    grid-area: first;
+    background-color: green;
+}
+.second{
+    grid-area: second;
+    background-color: green;
+}
+.third{
+    grid-area: third;
+    background-color: red;
+}
+.fourth{
+    grid-area: fourth;
+    background-color: orange;
+}
+.fifth{
+    grid-area: fifth;
+    background-color: red;
+}
+.sixth{
+    grid-area: sixth;
+    background-color: red;
+}
+.seventh{
+    grid-area: seventh;
+    background-color: orange;
+}
+.eighth{
+    grid-area: eighth;
+    background-color: green;
+}
